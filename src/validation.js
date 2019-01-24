@@ -354,6 +354,8 @@ window.rhubarb.validation.common.isEmailAddress = function(){
             return;
         }
 
+        value = value.trim();
+
         var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         if (!re.test(value)){
             failedCallback(value + " does not look like an email address");

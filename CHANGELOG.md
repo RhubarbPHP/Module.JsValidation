@@ -1,5 +1,9 @@
 # Changelog
 
+### 1.1.6
+
+Fixed:  Email validation now trims for IE 10/11 support
+
 ### 1.1.5
 
 Fixed:  Fixed issue with ajax callbacks as checks causing doubling of require messages
