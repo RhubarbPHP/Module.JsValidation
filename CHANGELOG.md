@@ -1,5 +1,9 @@
 # Changelog
 
+### 1.1.7
+
+Added:  Ability to clear triggers
+
 ### 1.1.6
 
 Fixed:  Email validation now trims for IE 10/11 support

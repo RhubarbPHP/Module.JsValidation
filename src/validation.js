@@ -94,6 +94,15 @@ window.rhubarb.validation.validator = function(){
         return self;
     };
 
+    this.clearTriggers = function() {
+
+        for (var i = 0; i < self._triggers.length; i++){
+            self._triggers[i].trigger = function () {
+                
+            }
+        }
+    }
+
     this.setSource = function(source){
         try {
             self._source = this.makeHtmlElementValueCallback(source);
